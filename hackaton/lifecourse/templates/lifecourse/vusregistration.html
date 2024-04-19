@@ -1,0 +1,23 @@
+{% extends 'yourstorymainapp/base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div style="margin-left: 2.5%">
+        <h1>Регистрация</h1>
+        <p>Проидите регистрацию</p>
+        <form method="post">
+            {% csrf_token  %}
+            {{form.as_p}}
+
+
+            <button type="submit" class = "btn btn-success">Зарегистрироваться</button>
+            <span>{{ error }}</span>
+        </form>
+    </div>
+{% endblock %}
