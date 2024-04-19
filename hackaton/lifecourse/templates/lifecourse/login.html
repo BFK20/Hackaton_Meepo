@@ -1,0 +1,19 @@
+{% extends 'lifecourse/base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block content %}
+    <div style="margin-left: 2.5%">
+        <h1>Вход</h1>
+        <p>Выполните вход</p>
+        <form method="post">
+            {% csrf_token  %}
+            {{form.as_p}}
+
+            <button type="submit" class = "btn btn-success">Войти</button>
+            <span>{{ error }}</span>
+        </form>
+    </div>
+{% endblock %}
