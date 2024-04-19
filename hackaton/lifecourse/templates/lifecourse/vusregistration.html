@@ -1,4 +1,4 @@
-{% extends 'yourstorymainapp/base.html' %}
+{% extends 'lifecourse/base.html' %}
 
 {% block title %}
 Регистрация
@@ -9,8 +9,8 @@
 
 
     <div style="margin-left: 2.5%">
-        <h1>Регистрация</h1>
-        <p>Проидите регистрацию</p>
+        <h1>Регистрация Вуза</h1>
+        <p>Проидите регистрацию Вуза</p>
         <form method="post">
             {% csrf_token  %}
             {{form.as_p}}
