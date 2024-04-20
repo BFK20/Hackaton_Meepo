@@ -6,11 +6,11 @@ class vuses(models.Model):
     name = models.CharField('Название Вуза', max_length=100)  # текст до 255 символов
 
     def __str__(self):
-        return self.vusname
+        return self.name
 
 class Faculty(models.Model):
     name = models.CharField(max_length=100)
-    faculty = models.ForeignKey(vuses, on_delete=models.CASCADE)
+    faculty = models.ForeignKey(vuses, on_delete=models.CASCADE, related_name="faculties")
 
 class Department(models.Model):
     name = models.CharField(max_length=100)

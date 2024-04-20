@@ -13,7 +13,9 @@
         <p>Проидите регистрацию Вуза</p>
         <form method="post">
             {% csrf_token  %}
-            {{form.as_p}}
+            <label for="vusname">Имя Вуза</label>
+            <input type="text" id="vusname" name="name" required>
+
 
 
             <button type="submit" class = "btn btn-success">Зарегистрироваться</button>
