@@ -6,7 +6,7 @@
 
 # Языки
 
-Python 
+Python 3.9
 
 HTML
 
