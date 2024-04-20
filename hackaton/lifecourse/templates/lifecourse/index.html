@@ -33,19 +33,10 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Department and Group Selection</h1>
-    <select id="department-select">
-        <option value="">Select Department</option>
-        <!-- Populate this select box with department options -->
-    </select>
-    <div id="group-list">
-        <!-- Group list will be displayed here -->
-    </div>
-
-    <form id="add-group-form">
-        <label for="group-name">Group Name:</label>
-        <input type="text" id="group-name" name="name" required>
-
-        <button type="submit">Add Group</button>
-    </form>
+        <h4>Новости</h4>
+    {% for el in tasks %}
+        <div></div>
+            <h5>{{ el.title }}</h5>
+            <p>{{ el.task }}</p>
+    {% endfor %}
 {% endblock %}
