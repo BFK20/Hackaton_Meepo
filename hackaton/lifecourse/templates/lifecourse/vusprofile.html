@@ -10,11 +10,14 @@
 
     <div style="margin-left: 2.5%">
         <h1>Профиль Вуза</h1>
-        <select>
-            {% for faculty in vus.faculties_get.name %}
-                <option>{{ group.name }}</option>
+        <ul>
+            {% for faculty in vus.faculties.all %}
+                <li >{{ faculty.name }}</li>
             {% endfor %}
-        </select>
+            <li onclick = "setf()"> Add Faculty</li>
+            <div id  = "formf" > </div>
+        </ul>
+
 
     </div>
 {% endblock %}

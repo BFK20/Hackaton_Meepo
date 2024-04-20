@@ -8,5 +8,6 @@ urlpatterns = [
     path('vusregistration', views.vusreg, name = 'vusreg'),
     path('add_group/', add_group, name='add_group'),
     path('vuses/<str:vusname>/', getvusprofile, name='group_list'),
+    path('createfac/', views.createfac, name='createfuc'),
 
 ]

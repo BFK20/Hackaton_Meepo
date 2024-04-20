@@ -11,7 +11,7 @@
     <div style="margin-left: 2.5%">
         <h1>Регистрация Вуза</h1>
         <p>Проидите регистрацию Вуза</p>
-        <form method="post">
+        <form action = "/vuses/meepo/"method="post">
             {% csrf_token  %}
             <label for="vusname">Имя Вуза</label>
             <input type="text" id="vusname" name="name" required>

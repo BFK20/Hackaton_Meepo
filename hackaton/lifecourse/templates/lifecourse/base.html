@@ -20,7 +20,7 @@
 
       <ul class="nav nav-pills">
 
-        <li class="nav-item"><a href="vusregistration" class="nav-link">Для Вузов</a></li>
+        <li class="nav-item"><a href="{% url 'vusreg' %}" class="nav-link">Для Вузов</a></li>
         <li class="nav-item"><a href="http://127.0.0.1:8000/admin/" class="nav-link">Админ</a></li>
         <li class="wrapper">
         </li>
@@ -31,6 +31,6 @@
     {% endblock %}
     {% load static %}
 
-    <script type="text/javascript" src="{% static 'js/darktheme.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/work.js' %}"></script>
 </body>
 </html>

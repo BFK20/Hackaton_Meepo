@@ -1,3 +1,4 @@
+import requests
 from django.shortcuts import render
 from .models import vuses, Faculty
 
@@ -17,7 +18,19 @@ def add_group(request):
 
 def getvusprofile(request, vusname):
     print(vusname)
-    vus = vuses.objects.get(name = vusname)
 
-    print(vus.name)
-    return render(request, 'lifecourse/vusprofile.html', context={vus})
+    vus = vuses.objects.get(name = vusname);
+
+
+    return render(request, 'lifecourse/vusprofile.html', context={'vus' :vus})
+
+def createfac(request):
+    print("hello")
+    if request.method == "POST":
+        name = requests.post['vus']
+        fname = requests.post['fac']
+        vus = vuses.objects.get(name = name)
+        facs = vus.faculties.all
+        fac = facs(name = fname)
+        fac.save()
+        print(fac.name)
