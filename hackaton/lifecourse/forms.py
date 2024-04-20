@@ -1,7 +1,7 @@
 from .models import vuses
 from django.forms import ModelForm, TextInput, Textarea, CheckboxInput
 
-class chatForm(ModelForm):
+class VusRegForm(ModelForm):
     class Meta:
         model = vuses
         fields = ["title", "structure"]
