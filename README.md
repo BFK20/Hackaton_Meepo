@@ -16,8 +16,6 @@ CSS
 
 PowerShell
 
-C++
-
 # Библеотеки
 
 asgiref 3.8.1
