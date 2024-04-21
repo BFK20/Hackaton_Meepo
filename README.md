@@ -28,5 +28,15 @@ typing_extensions 4.11.0
 
 tzdata 2024.1
 
+# ИнструкциЯ по развертке 
+
+venv\Scripts\activate
+
+cd hackaton
+
+python manage.py runserver
+
+
+
 
 
