@@ -1,0 +1,77 @@
+body {
+  overflow-x: hidden !important;
+  background: rgb(45, 45, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 45, 48, 1) 10%,
+    rgba(101, 101, 103, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+/* Изображение*/
+img#navbar_img {
+  height: 40%;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  img#navbar_img {
+    height: 25%;
+    width: 25%;
+  }
+}
+/*Кнопка Вход*/
+div#vhod_btn {
+  margin-left: 80%;
+}
+@media (max-width: 500px) {
+  div#vhod_btn {
+    margin-left: 0%;
+  }
+}
+/*Центральный div*/
+div#title_div {
+  margin: 3%;
+}
+@media (max-width: 500px) {
+  div#title_div {
+    margin-top: 10%;
+  }
+}
+/*Центральный текст*/
+h1#h1_Lif {
+  color: aliceblue;
+  text-align: center;
+  -webkit-text-stroke: 1px #ffffff43;
+}
+/*второй div*/
+div#sec_div {
+  padding-top: 2%;
+}
+/*Топ студентов*/
+.inline-block {
+  width: 100%; /* Ширина вашего div */
+  height: 300px; /* Высота вашего div */
+  background-color: rgb(255, 255, 255); /* Цвет фона */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+h1#topstud {
+  padding-top: 1%;
+  text-align: center;
+}
+.line {
+  border-bottom: 1px solid rgb(21, 19, 19);
+}
+/*Таблица топа*/
+
+table {
+  margin-left: 2%;
+  width: 95%; /* Ширина таблицы */
+  border-collapse: collapse; /* Объединение границ */
+}
+table td,
+table th {
+  padding: 8px; /* Внутренний отступ ячеек */
+  text-align: center; /* Выравнивание текста по центру */
+}
